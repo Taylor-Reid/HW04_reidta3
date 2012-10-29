@@ -94,6 +94,7 @@ void HW04_reidta3App::setup()
 	nearestStar = starTree->getNearest(findX,findY);
 	cout << nearestStar->identifier << nearestStar->x << nearestStar->y << endl;
 
+	/*
 	//compare to brute force array search:
 	Entry* closest = &starArray[0];
 	Entry* current = &starArray[0];
@@ -106,28 +107,7 @@ void HW04_reidta3App::setup()
 			closest=current;
 			dClosest=dCurr;
 		}
-	}
-
-
-	//find closest starbucks to given poin
-	findX=0.76;
-	findY=0.24;
-	nearestStar = starTree->getNearest(findX,findY);
-	cout << nearestStar->identifier << nearestStar->x << nearestStar->y << endl;
-
-	//compare to brute force array search:
-	closest = &starArray[0];
-	current = &starArray[0];
-	for(int i = 1; i<n ; i++){
-		current = &starArray[i];
-		double dCurr= sqrt(((current->x)-(findX))*((current->x)-(findX))+((current->y)-(findY))*((current->y)-(findY)));
-		double dClosest= sqrt(((closest->x)-(findX))*((closest->x)-(findX))+((closest->y)-(findY))*((closest->y)-(findY)));
-		//checks whether the found starbucks or the current starbucks is closer. 
-		if(dCurr < dClosest){
-			closest=current;
-			dClosest=dCurr;
-		}
-	}
+	}*/
 
 }
 
