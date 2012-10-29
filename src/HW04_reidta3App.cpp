@@ -4,6 +4,7 @@
 #include "boost/date_time/posix_time/posix_time.hpp"
 
 #include "Starbucks.h"
+#include "reidta3Starbucks.h"
 #include <fstream>
 #include <string>
 #include <iostream>
@@ -34,8 +35,7 @@ void HW04_reidta3App::update()
 
 void HW04_reidta3App::draw()
 {
-	// clear out the window with black
-	gl::clear( Color( 0, 0, 0 ) ); 
+	 
 }
 
 CINDER_APP_BASIC( HW04_reidta3App, RendererGl )
