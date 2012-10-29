@@ -4,14 +4,14 @@
 #include "reidta3Starbucks.h"
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
-#include "Node.h"
+
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
 
 reidta3Starbucks::reidta3Starbucks(){
-
+	root = new Node(NULL);
 }
 
 void reidta3Starbucks::build(Entry* c, int n){
@@ -42,15 +42,15 @@ void reidta3Starbucks::build(Entry* c, int n){
 	}
 
 	//form into k-d tree structure
-	Node* root = new Node(&info[0]);
+	root->key=&info[0];
 	for (int i = 1; i<n ; i++){
 		root->insert(&info[i],root,true);
 	}
-	sentinel = root;
 }
 
 Entry* reidta3Starbucks::getNearest(double x, double y){
 	Entry* check;
 	check->x=x;
 	check->y=y;
+	return root->search(check,root,true);
 }

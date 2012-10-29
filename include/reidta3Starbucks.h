@@ -1,10 +1,11 @@
 #include "Starbucks.h"
+#include "Node.h"
 
 class reidta3Starbucks : public Starbucks {
 	public:
-
-	Node* sentinel;
 	
+	Node* root;
+
 	reidta3Starbucks();
 
 	virtual void build(Entry* c, int n);

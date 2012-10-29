@@ -14,22 +14,25 @@ using namespace std;
 
 Node::Node(Entry* c){
 	key=c;
+	left_=NULL;
+	right_=NULL;
 }
 
 Node* Node::insert(Entry* e, Node* r, bool isXlevel){
-	if(r == NULL) return new Node(e);
-	if(r->key == e) return r;
-	if(isXlevel){
-		if(e->x < r->key->x){
-			r->left_ = insert(e,r->left_,!isXlevel);
+	if(e != NULL){
+		if(r == NULL) return new Node(e);
+		if(isXlevel){
+			if(e->x <= r->key->x){
+				r->left_ = insert(e,r->left_,!isXlevel);
+			}else{
+				r->right_ = insert(e,r->right_,!isXlevel);
+			}
 		}else{
-			r->right_ = insert(e,r->right_,!isXlevel);
-		}
-	}else{
-		if(e->y < r->key->y){
-			r->left_ = insert(e,r->left_,!isXlevel);
-		}else{
-			r->right_ = insert(e,r->right_,!isXlevel);
+			if(e->y <= r->key->y){
+				r->left_ = insert(e,r->left_,!isXlevel);
+			}else{
+				r->right_ = insert(e,r->right_,!isXlevel);
+			}
 		}
 	}
 	return r;
@@ -37,7 +40,7 @@ Node* Node::insert(Entry* e, Node* r, bool isXlevel){
 
 Entry* Node::search(Entry* e, Node* r, bool isXlevel){
 	if(r == NULL) return NULL;
-	if(r->key == e) return r->key;
+	if(r->key == e) return r->key; // probably doesn't apply since we are not given a name... need to work it out...
 	Entry* found;
 	if(isXlevel){
 		if(e->x < r->key->x){

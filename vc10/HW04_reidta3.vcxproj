@@ -105,14 +105,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\HW04_reidta3App.cpp" />
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="reidta3Starbucks.cpp" />
+    <ClCompile Include="..\src\Node.cpp" />
+    <ClCompile Include="..\src\reidta3Starbucks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Node.h" />
+    <ClInclude Include="..\include\reidta3Starbucks.h" />
     <ClInclude Include="..\include\Resources.h" />
     <ClInclude Include="..\include\Starbucks.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="reidta3Starbucks.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources.rc" />

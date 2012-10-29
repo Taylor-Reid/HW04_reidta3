@@ -18,10 +18,10 @@
     <ClCompile Include="..\src\HW04_reidta3App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="reidta3Starbucks.cpp">
+    <ClCompile Include="..\src\Node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
+    <ClCompile Include="..\src\reidta3Starbucks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClInclude Include="..\include\Starbucks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="reidta3Starbucks.h">
+    <ClInclude Include="..\include\Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="..\include\reidta3Starbucks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
