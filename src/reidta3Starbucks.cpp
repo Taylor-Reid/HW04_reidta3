@@ -44,13 +44,16 @@ void reidta3Starbucks::build(Entry* c, int n){
 	//form into k-d tree structure
 	root->key=&info[0];
 	for (int i = 1; i<n ; i++){
+		//heavy lifting done by insert function of the node class.
 		root->insert(&info[i],root,true);
 	}
 }
 
 Entry* reidta3Starbucks::getNearest(double x, double y){
-	Entry* check;
+	Entry* check = new Entry;
 	check->x=x;
 	check->y=y;
+	// search function of node classes looks for closest entry of subtree defined by root
+	// returns the result to wherever it was called
 	return root->search(check,root,true);
 }
