@@ -104,18 +104,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\cNode.cpp" />
     <ClCompile Include="..\src\HW04_reidta3App.cpp" />
     <ClCompile Include="..\src\Node.cpp" />
+    <ClCompile Include="..\src\reidta3Census.cpp" />
     <ClCompile Include="..\src\reidta3Starbucks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Census.h" />
+    <ClInclude Include="..\include\cNode.h" />
     <ClInclude Include="..\include\Node.h" />
+    <ClInclude Include="..\include\reidta3Census.h" />
     <ClInclude Include="..\include\reidta3Starbucks.h" />
     <ClInclude Include="..\include\Resources.h" />
     <ClInclude Include="..\include\Starbucks.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\Census_2000.csv" />
+    <None Include="..\resources\Census_2010.csv" />
+    <None Include="..\resources\mapUSA1.png" />
+    <None Include="..\resources\mapUSA2.png" />
+    <None Include="..\resources\Starbucks_2006.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

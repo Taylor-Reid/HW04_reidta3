@@ -24,6 +24,12 @@
     <ClCompile Include="..\src\reidta3Starbucks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\cNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\reidta3Census.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Resources.h">
@@ -38,10 +44,36 @@
     <ClInclude Include="..\include\reidta3Starbucks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Census.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\reidta3Census.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\Census_2000.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\Census_2010.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\mapUSA1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\mapUSA2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\Starbucks_2006.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
